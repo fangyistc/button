@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>homework7</title> 
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p1").remove();
+    $("p2").remove();
+  });
+});
+
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("li2").append("<div style='background-color: red;'><a href='www.qq.com' style='color: yellow;'>腾讯网</a></div>");
+  });
+});
+
+$(document).ready(function(){
+  $("#btn3").click(function(){
+    $("a").remove("");
+  });
+});
+
+
+$(document).ready(function(){
+  $("#btn4").click(function(){
+    $("p1").css("background-color","red");
+  });
+});
+$(document).ready(function(){
+  $("#btn4").click(function(){
+    $("p2").css("background-color","red");
+  });
+});
+$(document).ready(function(){
+  $("#btn4").click(function(){
+    $("li1").css("background-color","red");
+  });
+});
+$(document).ready(function(){
+  $("#btn4").click(function(){
+    $("li2").css("background-color","red");
+  });
+});
+
+</script>
+</head> 
+<body> 
+
+<div id="div1"  style="height: 150px; width: 300px; 
+border: 1px solid black; "> 
+<li1><font color="cadetblue" size="4"><b>p元素测试</font></b></li1><br />
+<div ><p1 >p元素test1</p1><br /></div>
+<div ><p2 >p元素test2</p2><br /></div>
+<li2><font color="cadetblue" size="4"><b>a元素测试</font></b></li2><br />
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+<button id="btn2">创建  a 元素</button><br />
+<button id="btn1">删除  p 元素</button><br />
+<button id="btn3">删除  a 元素</button><br />
+<button id="btn4">改变背景色为红色</button><br />
+ </div>
+</body> 
+</html>
